@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Report_Customer" targetNamespace="http://tempuri.org/Report_Customer.xsd" xmlns:mstns="http://tempuri.org/Report_Customer.xsd" xmlns="http://tempuri.org/Report_Customer.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="EkoInventoryDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="EkoInventoryDBConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.EkoInventoryDBConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BalanceInquiryViewTableAdapter" GeneratorDataComponentClassName="BalanceInquiryViewTableAdapter" Name="BalanceInquiryView" UserDataComponentName="BalanceInquiryViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EkoInventoryDBConnectionString (Web.config)" DbObjectName="EkoInventoryDB.dbo.BalanceInquiryView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT entityType, availableBalance, limitAmount, overDraftAccountNumber, casaNumber, createddt, createdby, modifiedby, modifieddt, modifiednotes, isDeleted, Status, workingBalance, entityId, Id, accountName FROM dbo.BalanceInquiryView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="entityType" DataSetColumn="entityType" />
+              <Mapping SourceColumn="availableBalance" DataSetColumn="availableBalance" />
+              <Mapping SourceColumn="limitAmount" DataSetColumn="limitAmount" />
+              <Mapping SourceColumn="overDraftAccountNumber" DataSetColumn="overDraftAccountNumber" />
+              <Mapping SourceColumn="casaNumber" DataSetColumn="casaNumber" />
+              <Mapping SourceColumn="createddt" DataSetColumn="createddt" />
+              <Mapping SourceColumn="createdby" DataSetColumn="createdby" />
+              <Mapping SourceColumn="modifiedby" DataSetColumn="modifiedby" />
+              <Mapping SourceColumn="modifieddt" DataSetColumn="modifieddt" />
+              <Mapping SourceColumn="modifiednotes" DataSetColumn="modifiednotes" />
+              <Mapping SourceColumn="isDeleted" DataSetColumn="isDeleted" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="workingBalance" DataSetColumn="workingBalance" />
+              <Mapping SourceColumn="entityId" DataSetColumn="entityId" />
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="accountName" DataSetColumn="accountName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Report_Customer" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Report_Customer" msprop:Generator_UserDSName="Report_Customer">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BalanceInquiryView" msprop:Generator_TableClassName="BalanceInquiryViewDataTable" msprop:Generator_TableVarName="tableBalanceInquiryView" msprop:Generator_TablePropName="BalanceInquiryView" msprop:Generator_RowDeletingName="BalanceInquiryViewRowDeleting" msprop:Generator_RowChangingName="BalanceInquiryViewRowChanging" msprop:Generator_RowEvHandlerName="BalanceInquiryViewRowChangeEventHandler" msprop:Generator_RowDeletedName="BalanceInquiryViewRowDeleted" msprop:Generator_UserTableName="BalanceInquiryView" msprop:Generator_RowChangedName="BalanceInquiryViewRowChanged" msprop:Generator_RowEvArgName="BalanceInquiryViewRowChangeEvent" msprop:Generator_RowClassName="BalanceInquiryViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="entityType" msprop:Generator_ColumnVarNameInTable="columnentityType" msprop:Generator_ColumnPropNameInRow="entityType" msprop:Generator_ColumnPropNameInTable="entityTypeColumn" msprop:Generator_UserColumnName="entityType">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="availableBalance" msprop:Generator_ColumnVarNameInTable="columnavailableBalance" msprop:Generator_ColumnPropNameInRow="availableBalance" msprop:Generator_ColumnPropNameInTable="availableBalanceColumn" msprop:Generator_UserColumnName="availableBalance" type="xs:int" minOccurs="0" />
+              <xs:element name="limitAmount" msprop:Generator_ColumnVarNameInTable="columnlimitAmount" msprop:Generator_ColumnPropNameInRow="limitAmount" msprop:Generator_ColumnPropNameInTable="limitAmountColumn" msprop:Generator_UserColumnName="limitAmount" type="xs:int" minOccurs="0" />
+              <xs:element name="overDraftAccountNumber" msprop:Generator_ColumnVarNameInTable="columnoverDraftAccountNumber" msprop:Generator_ColumnPropNameInRow="overDraftAccountNumber" msprop:Generator_ColumnPropNameInTable="overDraftAccountNumberColumn" msprop:Generator_UserColumnName="overDraftAccountNumber" type="xs:int" minOccurs="0" />
+              <xs:element name="casaNumber" msprop:Generator_ColumnVarNameInTable="columncasaNumber" msprop:Generator_ColumnPropNameInRow="casaNumber" msprop:Generator_ColumnPropNameInTable="casaNumberColumn" msprop:Generator_UserColumnName="casaNumber" type="xs:long" minOccurs="0" />
+              <xs:element name="createddt" msprop:Generator_ColumnVarNameInTable="columncreateddt" msprop:Generator_ColumnPropNameInRow="createddt" msprop:Generator_ColumnPropNameInTable="createddtColumn" msprop:Generator_UserColumnName="createddt" type="xs:dateTime" />
+              <xs:element name="createdby" msprop:Generator_ColumnVarNameInTable="columncreatedby" msprop:Generator_ColumnPropNameInRow="createdby" msprop:Generator_ColumnPropNameInTable="createdbyColumn" msprop:Generator_UserColumnName="createdby" type="xs:int" />
+              <xs:element name="modifiedby" msprop:Generator_ColumnVarNameInTable="columnmodifiedby" msprop:Generator_ColumnPropNameInRow="modifiedby" msprop:Generator_ColumnPropNameInTable="modifiedbyColumn" msprop:Generator_UserColumnName="modifiedby" type="xs:int" minOccurs="0" />
+              <xs:element name="modifieddt" msprop:Generator_ColumnVarNameInTable="columnmodifieddt" msprop:Generator_ColumnPropNameInRow="modifieddt" msprop:Generator_ColumnPropNameInTable="modifieddtColumn" msprop:Generator_UserColumnName="modifieddt" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="modifiednotes" msprop:Generator_ColumnVarNameInTable="columnmodifiednotes" msprop:Generator_ColumnPropNameInRow="modifiednotes" msprop:Generator_ColumnPropNameInTable="modifiednotesColumn" msprop:Generator_UserColumnName="modifiednotes" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="isDeleted" msprop:Generator_ColumnVarNameInTable="columnisDeleted" msprop:Generator_ColumnPropNameInRow="isDeleted" msprop:Generator_ColumnPropNameInTable="isDeletedColumn" msprop:Generator_UserColumnName="isDeleted" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:int" minOccurs="0" />
+              <xs:element name="workingBalance" msprop:Generator_ColumnVarNameInTable="columnworkingBalance" msprop:Generator_ColumnPropNameInRow="workingBalance" msprop:Generator_ColumnPropNameInTable="workingBalanceColumn" msprop:Generator_UserColumnName="workingBalance" type="xs:int" minOccurs="0" />
+              <xs:element name="entityId" msprop:Generator_ColumnVarNameInTable="columnentityId" msprop:Generator_ColumnPropNameInRow="entityId" msprop:Generator_ColumnPropNameInTable="entityIdColumn" msprop:Generator_UserColumnName="entityId" type="xs:int" minOccurs="0" />
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="accountName" msprop:Generator_ColumnVarNameInTable="columnaccountName" msprop:Generator_ColumnPropNameInRow="accountName" msprop:Generator_ColumnPropNameInTable="accountNameColumn" msprop:Generator_UserColumnName="accountName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BalanceInquiryView" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
