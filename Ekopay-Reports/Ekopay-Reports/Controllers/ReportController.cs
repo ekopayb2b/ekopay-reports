@@ -35,7 +35,6 @@ namespace Ekopay_Reports.Controllers
             reportViewer.LocalReport.ReportPath = Request.MapPath(Request.ApplicationPath) + @"Reports\Report_Customer.rdlc";
             reportViewer.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", ds.Tables[0]));
 
-
             ViewBag.ReportViewer = reportViewer;
 
             return View();
